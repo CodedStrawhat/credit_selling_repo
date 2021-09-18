@@ -25,6 +25,18 @@ nlu:
     - make new credit card.
     - credit card.
 
+- intent: personal
+  examples: |
+    - What is personal Credit Card.
+    - What are perks of personal Credit Card.
+    - personal credit card.
+
+- intent: similaritiesBetweenPersonal
+  examples: |
+    - what is similarities between personal and business
+    - personal vs business credit card.
+    
+
 # - intent: working
   # examples: |
     # - are you working fine
@@ -55,6 +67,7 @@ nlu:
 - intent: affirm
   examples: |
     - yes
+    - ok
     - y
     - indeed
     - of course

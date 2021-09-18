@@ -20,6 +20,23 @@ stories:
   - intent: deny
   - action: utter_happyending
 
+- story: accept credit card request
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: personal
+  - action: utter_personalCreditCard
+  - intent: similaritiesBetweenPersonal
+  - action: utter_personalAndBusiness
+  - intent: mood_great
+  - action: utter_happy
+ 
 # - story: working path
   # steps:
   # - intent: greet

@@ -11,6 +11,8 @@ intents:
   - working
   - info
   - newCreditCard
+  - similaritiesBetweenPersonal
+  - personal
 
 responses:
   utter_greet:
@@ -24,6 +26,16 @@ responses:
 
   utter_happyending:
   - text: "Ok sir! Glad to help you.\n Have a GoodDay :)"
+
+  utter_purposeOfCreditCard:
+  - text: "For Which purpose you want credit card:\n    1. Personal\n   2. Business\n   3. Corporate"
+  
+  utter_personalCreditCard:
+  - text: "Personal cards. Consumer-grade card programs designed for individuals.\nYou can use it for personal/family use. In online shopping you have more offers in credit Card than Debit Card."
+  
+  utter_personalAndBusiness:
+  - text: "Both personal and business cards can be used to pay both personal and\nbusiness expenses. Business and personal cards sometimes offer the same\nrewards program. Personal credit history can factor into approval for both,\nand individuals can be held liable for the debt of both. In other words, the\ndifferences between personal and business card programs are more/ntechnical than you might initially assume.\n For more informatio follow the link: https://blog.abacus.com/difference-commercial-business-personal-credit-cards/"
+
   # utter_working_confr:
   # - text: "Yes Bro All Good"
 # 
