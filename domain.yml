@@ -10,16 +10,25 @@ intents:
   - bot_challenge
   - working
   - info
+  - newCreditCard
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey There!  Welcome to CreditCard Support Assistance Desk.\nI am a Virtual Bot . I can help you with any query about Credit Card."
 
-  utter_working_confr:
-  - text: "Yes Bro All Good"
+  utter_askinfo:
+  - text: "Sure! , Can I ask you some basic questions so that I can help you out at the best."
 
-  utter_give_info:
-  - text: "I am a Bot. \n I am from Punjab National Bank. \n I am Rasa Bot .\n My hobby is chatting din raat"
+  utter_firstReject:
+  - text: "It will not take long. Only two minutes."
+
+  utter_happyending:
+  - text: "Ok sir! Glad to help you.\n Have a GoodDay :)"
+  # utter_working_confr:
+  # - text: "Yes Bro All Good"
+# 
+  # utter_give_info:
+  # - text: "I am a Bot. \n I am from Punjab National Bank. \n I am Rasa Bot .\n My hobby is chatting din raat"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"

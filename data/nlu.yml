@@ -17,17 +17,25 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: working
+- intent: newCreditCard
   examples: |
-    - are you working fine
-    - are you ok
-    - will you give correct output
+    - I want a new credit card.
+    - new Credit Card.
+    - How to get a new credit card.
+    - make new credit card.
+    - credit card.
 
-- intent: info
-  examples: |
-    - Intro de apna
-    - Intro
-    - Intro de bosdike
+# - intent: working
+  # examples: |
+    # - are you working fine
+    # - are you ok
+    # - will you give correct output
+# 
+# - intent: info
+  # examples: |
+    # - Intro de apna
+    # - Intro
+    # - Intro de bosdike
     
 
 - intent: goodbye

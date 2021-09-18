@@ -9,21 +9,32 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: working path
-  steps:
+- story: deny request
+  steps: 
   - intent: greet
   - action: utter_greet
-  - intent: working
-  - action: utter_working_confr
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: deny
+  - action: utter_happyending
 
-- story: intro_path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: info
-  - action: utter_give_info
-  - intent: goodbye
-  - action: utter_goodbye
+# - story: working path
+  # steps:
+  # - intent: greet
+  # - action: utter_greet
+  # - intent: working
+  # - action: utter_working_confr
+# 
+# - story: intro_path
+  # steps:
+  # - intent: greet
+  # - action: utter_greet
+  # - intent: info
+  # - action: utter_give_info
+  # - intent: goodbye
+  # - action: utter_goodbye
 
 - story: sad path 1
   steps:
