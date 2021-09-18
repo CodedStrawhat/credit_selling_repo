@@ -30,6 +30,32 @@ nlu:
     - Intro de bosdike
     
 
+- intent: apr_info
+  examples: |
+    -what is apr?
+    -what is annual percentage rate?
+    -give me information about apr
+    -what do you mean by apr
+
+- intent: apr_enquiry
+  examples: |
+    -How much apr do I need to pay with this credit card?
+    -What apr applies to my credit card
+    -What is the annual percentage rate applied to my credit card?
+    -How much annual percentage rate is applied to my card?
+
+- intent: minrepay_info
+  examples: | 
+    - What is minimum repayment ?
+    - What do you mean by minimum repayment?
+
+- intent: minrepay_enquiry
+  examples: |
+    - What minimum repayment do I have to pay?
+    - What is the minimum repayment for my card?
+    - How much minimum repayment do I have to give as per my card?
+    - what is the minimum repayment
+
 - intent: goodbye
   examples: |
     - good afternoon

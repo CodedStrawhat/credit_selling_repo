@@ -10,6 +10,10 @@ intents:
   - bot_challenge
   - working
   - info
+  - apr_info
+  - apr_enquiry
+  - minrepay_info
+  - minrepay_enquiry
 
 responses:
   utter_greet:
@@ -36,6 +40,18 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_apr_info:
+  - text: "It is the interest rate applied on your card for the whole year rather than on a monthly basis."
+
+  utter_apr_enquiry:
+  - text: "You need to pay xyz apr with your card"
+
+  utter_minrepay_info:
+  - text: "The minimum monthly repayment on a credit card is the lowest amount you have to pay to meet your credit agreement"
+  
+  utter_minrepay_enquiry:
+  - text: "Minimum repayment for your credit card is xyz"
 
 session_config:
   session_expiration_time: 60
