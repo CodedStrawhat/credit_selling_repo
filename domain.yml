@@ -11,9 +11,10 @@ intents:
   - working
   - info
   - newCreditCard
-  - similaritiesBetweenPersonal
+  - similaritiesBetweenPersonalAndIntents
   - personal
-
+  - business
+  - corporate
 responses:
   utter_greet:
   - text: "Hey There!  Welcome to CreditCard Support Assistance Desk.\nI am a Virtual Bot . I can help you with any query about Credit Card."
@@ -28,7 +29,7 @@ responses:
   - text: "Ok sir! Glad to help you.\n Have a GoodDay :)"
 
   utter_purposeOfCreditCard:
-  - text: "For Which purpose you want credit card:\n    1. Personal\n   2. Business\n   3. Corporate"
+  - text: "For Which purpose you want credit card:\n   1. Personal\n   2. Business\n   3. Corporate"
   
   utter_personalCreditCard:
   - text: "Personal cards. Consumer-grade card programs designed for individuals.\nYou can use it for personal/family use. In online shopping you have more offers in credit Card than Debit Card."
@@ -36,6 +37,11 @@ responses:
   utter_personalAndBusiness:
   - text: "Both personal and business cards can be used to pay both personal and\nbusiness expenses. Business and personal cards sometimes offer the same\nrewards program. Personal credit history can factor into approval for both,\nand individuals can be held liable for the debt of both. In other words, the\ndifferences between personal and business card programs are more/ntechnical than you might initially assume.\n For more informatio follow the link: https://blog.abacus.com/difference-commercial-business-personal-credit-cards/"
 
+  utter_businessCreditCard:
+  - text: "A business credit card is a credit card intended for use by a business rather than for\nan individual’s personal use. Business credit cards are available to businesses of all \nsizes and can help them build a credit profile to improve future borrowing terms.\n For more info follow the link: https://www.investopedia.com/terms/b/business-credit-card.asp"
+  
+  utter_corporateCreditCard:
+  - text: "Corporate credit cards are credit cards issued to employees of established companies that \nlet them charge their authorized business expenses—such as hotel stays and plane tickets—without \nhaving to use their own card or cash. These cards, which are also known as commercial credit cards, can make it \neasier for employees (and employers) to manage expenses, and many offer perks like frequent flyer miles and access \nto airport lounges.\n   1. Corporate credit cards make it easier for employers and employees to manage expenses\n   2. Corporate cards are issued to larger, established companies and differ from business cards available to sole proprietorships & DBAs.\n   3. Employees need to learn and follow their company’s corporate credit card policies before making any charges\n   4. Depending on the card, either an employee or the employer will be responsible for paying the credit card bill.\n-----------------------------------------------------------------------------------------------------------------\nFor information click on the link: https://www.investopedia.com/corporate-credit-cards-definition-4685050"
   # utter_working_confr:
   # - text: "Yes Bro All Good"
 # 

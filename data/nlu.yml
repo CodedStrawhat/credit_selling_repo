@@ -23,18 +23,35 @@ nlu:
     - new Credit Card.
     - How to get a new credit card.
     - make new credit card.
-    - credit card.
+    - credit card.c
 
 - intent: personal
   examples: |
     - What is personal Credit Card.
     - What are perks of personal Credit Card.
     - personal credit card.
+    - personal
 
-- intent: similaritiesBetweenPersonal
+- intent: business
+  examples: |
+    - What is business Credit Card.
+    - What are perks of business Credit Card.
+    - business credit card.
+    - business
+
+- intent: corporate
+  examples: |
+    - What is corporate Credit Card.
+    - What are perks of corporate Credit Card.
+    - corporate credit card.
+    - corporate
+
+- intent: similaritiesBetweenPersonalAndIntents
   examples: |
     - what is similarities between personal and business
     - personal vs business credit card.
+
+
     
 
 # - intent: working
