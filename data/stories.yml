@@ -9,21 +9,211 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: working path
-  steps:
+- story: deny request
+  steps: 
   - intent: greet
   - action: utter_greet
-  - intent: working
-  - action: utter_working_confr
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: deny
+  - action: utter_happyending
 
-- story: intro_path
-  steps:
+- story: accept deny personal credit card request
+  steps: 
   - intent: greet
   - action: utter_greet
-  - intent: info
-  - action: utter_give_info
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: personal
+  - action: utter_personalCreditCard
+  - intent: similaritiesBetweenPersonalAndIntents
+  - action: utter_personalAndBusiness
+  - intent: mood_great
+  - action: utter_happy
+
+
+- story: accept deny personal credit card request
+  steps: 
+  - intent: newCreditCard
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: personal
+  - action: utter_personalCreditCard
+  - intent: similaritiesBetweenPersonalAndIntents
+  - action: utter_personalAndBusiness
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept personal credit card request
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: personal
+  - action: utter_personalCreditCard
+  - intent: similaritiesBetweenPersonalAndIntents
+  - action: utter_personalAndBusiness
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept personal credit card request
+  steps: 
+  - intent: newCreditCard
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: personal
+  - action: utter_personalCreditCard
+  - intent: similaritiesBetweenPersonalAndIntents
+  - action: utter_personalAndBusiness
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept deny business credit card request
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: business
+  - action: utter_businessCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept deny business credit card request
+  steps: 
+  - intent: newCreditCard
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: business
+  - action: utter_businessCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept business credit card request
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: business
+  - action: utter_businessCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept business credit card request
+  steps: 
+  - intent: newCreditCard
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: business
+  - action: utter_businessCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+- story: deny accept corporate credit card request
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: business
+  - action: utter_corporateCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+- story: deny accept corporate credit card request
+  steps: 
+  - intent: newCreditCard
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: business
+  - action: utter_corporateCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept corporate credit card request
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: corporate
+  - action: utter_corporateCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+- story: accept corporate credit card request
+  steps: 
+  - intent: newCreditCard
+  - action: utter_greet
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: corporate
+  - action: utter_corporateCreditCard
+  - intent: mood_great
+  - action: utter_happy
+
+
+ 
+# - story: working path
+  # steps:
+  # - intent: greet
+  # - action: utter_greet
+  # - intent: working
+  # - action: utter_working_confr
+# 
+# - story: intro_path
+  # steps:
+  # - intent: greet
+  # - action: utter_greet
+  # - intent: info
+  # - action: utter_give_info
+  # - intent: goodbye
+  # - action: utter_goodbye
 
 - story: apr_info_path
   steps:
@@ -38,6 +228,18 @@ stories:
   - action: utter_minrepay_info
   - intent: minrepay_enquiry
   - action: utter_minrepay_enquiry
+
+- story: annual_fee_path
+  steps:
+  - intent: annual_fee
+  - action: utter_annual_fee
+  - intent: annual_fee_enquiry
+  - intent: utter_annual_fee_amount
+
+- story: introductory_rate
+  steps:
+  - intent: introductory_interest_rate
+  - action: utter_intro_rate
 
 - story: sad path 1
   steps:
