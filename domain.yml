@@ -72,25 +72,25 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_apr_info:
+  utter_aprinfo:
   - text: "It is the interest rate applied on your card for the whole year rather than on a monthly basis."
 
-  utter_apr_enquiry:
+  utter_aprenquiry:
   - text: "You need to pay xyz apr with your card"
 
-  utter_minrepay_info:
+  utter_minrepayinfo:
   - text: "The minimum monthly repayment on a credit card is the lowest amount you have to pay to meet your credit agreement"
   
-  utter_minrepay_enquiry:
+  utter_minrepayenquiry:
   - text: "Minimum repayment for your credit card is xyz"
 
-  utter_annual_fee:
+  utter_annualfee:
   - text: "The annual fee is added to the amount due and you will have to pay interest on the fee as well as on your spending, unless you pay it in full"
 
-  utter_annual_fee_amount:
+  utter_annualfeeamount:
   - text: "Annual fee amount is xyz"
 
-  utter_intro_rate:
+  utter_introrate:
   - text: "The initial interest rate is xyz percent of your original amount"
 
 session_config:

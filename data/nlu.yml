@@ -54,19 +54,6 @@ nlu:
 
     
 
-# - intent: working
-  # examples: |
-    # - are you working fine
-    # - are you ok
-    # - will you give correct output
-# 
-# - intent: info
-  # examples: |
-    # - Intro de apna
-    # - Intro
-    # - Intro de bosdike
-    
-
 - intent: apr_info
   examples: |
     -what is apr?
@@ -103,7 +90,7 @@ nlu:
     - Does an annual fee apply to my credit card?
     - What is an annual fee?
 
--intent: annual_fee_enquiry
+- intent: annual_fee_enquiry
   examples: |
     - How much is the annual fee of my card?
     - What is the annual fee of my card?
@@ -111,7 +98,7 @@ nlu:
     - Annual fee amount?
     - What's the amount?
 
--intent: introductory_interest_rate
+- intent: introductory_interest_rate
   examples: |
     - What is the introductory interest rate?
     - introductory interest rates
