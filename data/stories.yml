@@ -252,6 +252,335 @@ stories:
   - intent: introductory_interest_rate
   - action: utter_introrate
 
+- story: credit card n path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card pn path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card ppn1 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck1
+  - action: utter_cardtype1
+  - action: utter_inquire
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card ppn2 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck2
+  - action: utter_cardtype2
+  - action: utter_inquire
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card ppn3 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck3
+  - action: utter_cardtype3
+  - action: utter_inquire
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card ppn4 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck4
+  - action: utter_cardtype4
+  - action: utter_inquire
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card ppn5 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck5
+  - action: utter_cardtype5
+  - action: utter_inquire
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card ppn6 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck6
+  - action: utter_cardtype6
+  - action: utter_inquire
+  - intent: deny
+  - action: utter_rejectionexit
+
+- story: credit card ppp1 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck1
+  - action: utter_cardtype1
+  - action: utter_inquire
+  - intent: affirm
+  - action: utter_great 
+
+- story: credit card ppp2 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck2
+  - action: utter_cardtype2
+  - action: utter_inquire
+  - intent: affirm
+  - action: utter_great 
+
+- story: credit card ppp3 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck3
+  - action: utter_cardtype3
+  - action: utter_inquire
+  - intent: affirm
+  - action: utter_great 
+
+- story: credit card ppp4 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck4
+  - action: utter_cardtype4
+  - action: utter_inquire
+  - intent: affirm
+  - action: utter_great 
+
+- story: credit card ppp5 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck5
+  - action: utter_cardtype5
+  - action: utter_inquire
+  - intent: affirm
+  - action: utter_great 
+
+- story: credit card ppp6 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_greet1
+  - intent: affirm
+  - action: utter_positive1binaryresponse
+  - intent: affirm
+  - action: utter_positive2multipleresponse
+  - intent: multicheck6
+  - action: utter_cardtype6
+  - action: utter_inquire
+  - intent: affirm
+  - action: utter_great 
+
+
+- story: context1 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_giveinfo
+  - intent: deny
+  - action: utter_request
+  - intent: deny
+  - action: utter_nikalja
+
+- story: context2 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_giveinfo
+  - intent: deny
+  - action: utter_request
+  - intent: affirm
+  - action: utter_extra
+  - intent: affirm
+  - action: utter_details
+  - action: utter_kid
+
+- story: context3 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_giveinfo
+  - intent: affirm
+  - action: utter_greatSir
+  - intent: affirm
+  - action: utter_details
+  - action: utter_kid
+
+# - story: context4 path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: affirm
+#   - action: utter_giveinfo
+#   - intent: deny
+#   - action: utter_request
+#   - intent: affirm
+#   - action: utter_askcredit
+#   - intent: affirm
+#   - action: utter_greatsir 
+#   - intent: affirm
+#   - action: utter_details
+#   - action: utter_kid
+
+# - story: context5 path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: affirm
+#   - action: utter_giveinfo
+#   - intent: affirm
+#   - action: utter_askcredit  
+#   - intent: affirm
+#   - action: utter_greatsir
+#   - intent: affirm
+#   - action: utter_details 
+#   - action: utter_kid 
+
+- story: context6 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_giveinfo
+  - intent: deny
+  - action: utter_request
+  - intent: affirm
+  - action: utter_extra
+  - intent: deny
+  - action: utter_nikalja
+
+- story: context7 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_giveinfo
+  - intent: affirm
+  - action: utter_greatSir
+  - intent: deny
+  - action: utter_nikalja    
+
+# - story: context8 path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: affirm
+#   - action: utter_giveinfo
+#   - intent: deny
+#   - action: utter_request
+#   - intent: affirm
+#   - action: utter_greatSir 
+#   - intent: deny
+#   - action: utter_nikalja  
+
+# - story: context0 path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: affirm
+#   - action: utter_giveinfo
+#   - intent: affirm
+#   - action: utter_askcredit  
+#   - intent: affirm
+#   - action: utter_nikalja
+
+
 - story: sad path 1
   steps:
   - intent: greet
