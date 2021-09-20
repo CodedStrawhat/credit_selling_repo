@@ -55,6 +55,23 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+- story: accept deny personal credit card request
+  steps: 
+  - intent: newCreditCard
+  - action: utter_askinfo
+  - intent: deny
+  - action: utter_firstReject
+  - intent: affirm
+  - action: utter_purposeOfCreditCard
+  - intent: personal
+  - action: utter_personalCreditCard
+  - intent: similaritiesBetweenPersonalAndIntents
+  - action: utter_personalAndBusiness
+  - intent: mood_great
+  - action: utter_happy
+  
+
+
 - story: accept personal credit card request
   steps: 
   - intent: greet
@@ -199,21 +216,41 @@ stories:
 
 
  
-# - story: working path
-  # steps:
-  # - intent: greet
-  # - action: utter_greet
-  # - intent: working
-  # - action: utter_working_confr
-# 
-# - story: intro_path
-  # steps:
-  # - intent: greet
-  # - action: utter_greet
-  # - intent: info
-  # - action: utter_give_info
-  # - intent: goodbye
-  # - action: utter_goodbye
+
+
+- story: apr_info_path
+  steps:
+  - intent: apr_info
+  - action: utter_greet
+  - intent: apr_info
+  - action: utter_aprinfo
+  - intent: apr_enquiry
+  - action: utter_aprenquiry
+
+- story: minrepay_path
+  steps:
+  - intent: minrepay_info
+  - action: utter_greet
+  - intent: minrepay_info
+  - action: utter_minrepayinfo
+  - intent: minrepay_enquiry
+  - action: utter_minrepayenquiry
+
+- story: annual_fee_path
+  steps:
+  - intent: annual_fee
+  - action: utter_greet
+  - intent: annual_fee
+  - action: utter_annualfee
+  - intent: annual_fee_enquiry
+  - action: utter_annualfeeamount
+
+- story: introductory_rate
+  steps:
+  - intent: introductory_interest_rate
+  - action: utter_greet
+  - intent: introductory_interest_rate
+  - action: utter_introrate
 
 - story: sad path 1
   steps:

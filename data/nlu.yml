@@ -54,18 +54,57 @@ nlu:
 
     
 
-# - intent: working
-  # examples: |
-    # - are you working fine
-    # - are you ok
-    # - will you give correct output
-# 
-# - intent: info
-  # examples: |
-    # - Intro de apna
-    # - Intro
-    # - Intro de bosdike
-    
+- intent: apr_info
+  examples: |
+    -what is apr?
+    -what is annual percentage rate?
+    -give me information about apr
+    -what do you mean by apr
+
+- intent: apr_enquiry
+  examples: |
+    -How much apr do I need to pay with this credit card?
+    -What apr applies to my credit card
+    -What is the annual percentage rate applied to my credit card?
+    -How much annual percentage rate is applied to my card?
+    - what is the amount?
+
+- intent: minrepay_info
+  examples: | 
+    - What is minimum repayment ?
+    - What do you mean by minimum repayment?
+
+- intent: minrepay_enquiry
+  examples: |
+    - What minimum repayment do I have to pay?
+    - What is the minimum repayment for my card?
+    - How much minimum repayment do I have to give as per my card?
+    - what is the minimum repayment?
+    - what is the amount?
+
+- intent: annual_fee
+  examples: |
+    - Do I have to pay an annual fee?
+    - Do I need to pay an annual fee with my card?
+    - Is there an annual fee?
+    - Does an annual fee apply to my credit card?
+    - What is an annual fee?
+
+- intent: annual_fee_enquiry
+  examples: |
+    - How much is the annual fee of my card?
+    - What is the annual fee of my card?
+    - What amount is the annual fee?
+    - Annual fee amount?
+    - What's the amount?
+
+- intent: introductory_interest_rate
+  examples: |
+    - What is the introductory interest rate?
+    - introductory interest rates
+    - What is the starting interest rate?
+    - What is the initial interest rate?
+    - Initial interest rate?
 
 - intent: goodbye
   examples: |
